@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahd Mattar | Personal Landing Page</title>
+    <meta name="description" content="Personal landing page of Shahd Mattar." />
+    <!-- <meta http-equiv="refresh" content="30"> -->
+  </head>
+
+  <body>
+    <a href="#main-content">Skip to main content</a>
+
+    <header>
+      <nav aria-label="Primary">
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <figure>
+        <img
+          src="profile.jpeg"
+          alt="Portrait of Shahd Mattar"
+          width="160"
+          height="160"
+        />
+      </figure>
+
+      <p>
+        <a
+          href="https://github.com/shahdmattar"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/shahd-matar-957608368"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        |
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=shahdmatarr@gmail.com&su=Freelance%20Inquiry&body=Hi%20Shahd%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Contact via Gmail</a
+        >
+      </p>
+    </header>
+
+    <main id="main-content">
+      <section id="about" aria-labelledby="about-title">
+        <h1 id="about-title">About Me</h1>
+
+        <p>
+          Hi, I’m <strong>Shahd Matar</strong>, a fourth-year
+          <strong>Computer Engineering</strong> student at the Islamic University
+          of Gaza.<br />
+          I’m currently self-learning <strong>Frontend Development</strong>
+          through hands-on projects and documentation.<br />
+          My current goal is to become comfortable building simple, responsive websites for freelance projects.<br>
+          Then I plan to learn <strong>Backend Development</strong> gradually to expand my skills.
+        </p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+
+        <h3>Frontend (Current Focus)</h3>
+        <ul>
+          <li>HTML: semantic structure, forms</li>
+          <li>CSS: box model, Flexbox/Grid basics, responsive design</li>
+          <li>JavaScript: fundamentals, DOM basics</li>
+        </ul>
+
+        <h3>Programming</h3>
+        <ul>
+          <li>Java: OOP fundamentals</li>
+          <li>Data Structure &amp Algorithms</li>
+          <li>Python: Intro to Computer Science (MIT course)</li>
+        </ul>
+
+        <h3>Tools</h3>
+        <ul>
+          <li>Git &amp; GitHub</li>
+          <li>VS Code</li>
+          <li>Chrome DevTools</li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+
+        <article aria-labelledby="p1-title">
+          <h3 id="p1-title">Personal Landing Page (HTML Only)</h3>
+          <p>
+            A semantic personal website built with HTML only.<br> It includes About,
+            Skills, and Contact sections, accessible navigation, and a contact
+            form UI.
+          </p>
+
+          <p>
+            <a href="#" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            |
+            <a href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </p>
+        </article>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>If you’d like to work with me or have feedback, send a message:</p>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Send a message</legend>
+
+            <p>
+              <label for="name">Full name</label><br />
+              <input
+                id="name"
+                name="name"
+                type="text"
+                required
+                minlength="2"
+                placeholder="Your name"
+              />
+            </p>
+
+            <p>
+              <label for="email">Email</label><br />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                placeholder="you@example.com"
+                autocomplete="email"
+              />
+            </p>
+
+            <p>
+              <label for="message">Message</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                minlength="10"
+                placeholder="Write your message..."
+              ></textarea>
+            </p>
+
+            <p>
+              <button type="submit">Send</button>
+              <button type="reset">Reset</button>
+            </p>
+          </fieldset>
+        </form>
+
+        <p>
+          This form is for UI only (HTML project). Please contact me via email:
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shahdmatarr@gmail.com&su=Freelance%20Inquiry&body=Hi%20Shahd%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Contact via Gmail</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p><small>© 2026 Shahd Mattar. Built with HTML only.</small></p>
+    </footer>
+  </body>
+</html>
