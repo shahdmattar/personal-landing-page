@@ -3,72 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shahd Mattar | Personal Landing Page</title>
-    <meta name="description" content="Personal landing page of Shahd Mattar." />
+    <title>Shahd Matar | Personal Landing Page</title>
+    <meta name="description" content="Personal landing page of Shahd Matar." />
     <!-- <meta http-equiv="refresh" content="30"> -->
   </head>
 
   <body>
-    <a href="#main-content">Skip to main content</a>
+    <!--Header & navigation -->
+    <header id="top">
+      <h1>Shahd Matar</h1>
 
-    <header>
-      <nav aria-label="Primary">
+      <!-- Intro paragraph -->
+      <p id="intro">
+         Hi, I’m <strong>Shahd Matar</strong>, a fourth-year
+          <strong>Computer Engineering</strong> student at the Islamic University
+          of Gaza.
+      </p>
+      <nav aria-label="Primary navigation">
         <a href="#about">About</a> |
         <a href="#skills">Skills</a> |
         <a href="#projects">Projects</a> |
         <a href="#contact">Contact</a>
       </nav>
+    </header>
+    <hr/>
 
-      <figure>
+    <main id="main-content">
+      <!-- About Me -->
+      <section id="about">
+        <h2>About Me</h2>
+        
+        <!-- Profile Image -->
+        <figure>
         <img
           src="profile.jpeg"
-          alt="Portrait of Shahd Mattar"
+          alt="Portrait of Shahd Matar"
           width="160"
           height="160"
         />
       </figure>
 
-      <p>
-        <a
-          href="https://github.com/shahdmattar"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >
-        |
-        <a
-          href="https://www.linkedin.com/in/shahd-matar-957608368"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >
-        |
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=shahdmatarr@gmail.com&su=Freelance%20Inquiry&body=Hi%20Shahd%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Contact via Gmail</a
-        >
-      </p>
-    </header>
-
-    <main id="main-content">
-      <section id="about" aria-labelledby="about-title">
-        <h1 id="about-title">About Me</h1>
-
-        <p>
-          Hi, I’m <strong>Shahd Matar</strong>, a fourth-year
-          <strong>Computer Engineering</strong> student at the Islamic University
-          of Gaza.<br />
+        <p >
           I’m currently self-learning <strong>Frontend Development</strong>
           through hands-on projects and documentation.<br />
           My current goal is to become comfortable building simple, responsive websites for freelance projects.<br>
           Then I plan to learn <strong>Backend Development</strong> gradually to expand my skills.
         </p>
       </section>
+      <hr/>
 
-      <section id="skills" aria-labelledby="skills-title">
-        <h2 id="skills-title">Skills</h2>
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
 
         <h3>Frontend (Current Focus)</h3>
         <ul>
@@ -91,30 +77,37 @@
           <li>Chrome DevTools</li>
         </ul>
       </section>
+      <hr/>
 
-      <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
+      <!-- Projects -->
+      <section id="projects" >
+        <h2>Projects</h2>
+  
+      <table border="1">
+        <tr>
+          <th>Project Name</th>
+          <th>Year</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Personal Landing Page (HTML Only)</td>
+          <td>2026</td>
+          <td>A semantic personal page with navigation, skills, a projects table, and a contact form UI.</td>
+        </tr>
+      </table>
 
-        <article aria-labelledby="p1-title">
-          <h3 id="p1-title">Personal Landing Page (HTML Only)</h3>
-          <p>
-            A semantic personal website built with HTML only.<br> It includes About,
-            Skills, and Contact sections, accessible navigation, and a contact
-            form UI.
-          </p>
+      <p>
+        <a href="https://github.com/shahdmattar/personal-landing-page" target="_blank" rel="noopener noreferrer">
+          GitHub Repo
+        </a>
+        |
+        <a href="https://shahdmattar.github.io/personal-landing-page/" target="_blank" rel="noopener noreferrer">
+          Live Demo
+        </a>
+      </p>
+    </section>
 
-          <p>
-            <a href="https://github.com/shahdmattar/personal-landing-page" 
-            target="_blank" 
-            rel="noopener noreferrer">GitHub Repo</a>
-            |
-            <a href="https://shahdmattar.github.io/personal-landing-page/" 
-            target="_blank"
-            rel="noopener noreferrer">Live Demo</a>
-          </p>
-        </article>
-      </section>
-
+      <!-- Contact Form -->
       <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact</h2>
         <p>If you’d like to work with me or have feedback, send a message:</p>
@@ -132,6 +125,7 @@
                 required
                 minlength="2"
                 placeholder="Your name"
+                autocomplete="name"
               />
             </p>
 
@@ -167,9 +161,9 @@
         </form>
 
         <p>
-          This form is for UI only (HTML project). Please contact me via email:
+          <small>This form is for UI only (HTML project). Contact me via email:</small>
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=shahdmatarr@gmail.com&su=Freelance%20Inquiry&body=Hi%20Shahd%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shahdmatarr@gmail.com&su=Website%20Inquiry&body=Hello%20Shahd%2C%0A%0AI%20have%20a%20question%20about%20your%20website.%0A"
             target="_blank"
             rel="noopener noreferrer"
             >Contact via Gmail</a
@@ -178,8 +172,22 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p><small>© 2026 Shahd Mattar. Built with HTML only.</small></p>
+      <p><small> &copy; 2026 Shahd Mattar. Built with HTML only.</small></p>
+      <p>
+      <a
+          href="https://github.com/shahdmattar"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a>
+        |
+        <a
+          href="https://www.linkedin.com/in/shahd-matar-957608368"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a>
+      </p>
     </footer>
   </body>
 </html>
