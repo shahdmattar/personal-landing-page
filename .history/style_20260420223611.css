@@ -179,9 +179,8 @@ img {
   transform: translateY(-3px);
 }
 
-
 /* About */
-
+>>>>>>> 548c4695246f21b507263af5fa72dcc5362879b9
 .about {
   padding: 4rem 0;
   background-color: #111827;
@@ -357,7 +356,11 @@ img {
   color: #0f172a;
 }
 
+<<<<<<< HEAD
+/*Contact */
+=======
 /* Contact */
+>>>>>>> 548c4695246f21b507263af5fa72dcc5362879b9
 .contact {
   padding: 4rem 0;
   background-color: #0f172a;
@@ -442,6 +445,9 @@ img {
   text-decoration: underline;
 }
 
+.site-footer {
+  background-color: #020617;
+  padding: 1.5rem 1rem;
 /* Footer */
 footer {
   padding: 28px 20px;
@@ -469,7 +475,7 @@ footer a:hover {
 }
 }
 
-/*  Responsive */ 
+/*  Responsive */
 @media (max-width: 575px) {
   .main {
     min-height: 100vh;
@@ -555,6 +561,7 @@ footer a:hover {
     background-position: 75% center;
     background-attachment: scroll;
   }
+>>>>>>> 548c4695246f21b507263af5fa72dcc5362879b9
 }
 
 /* Tablets */
