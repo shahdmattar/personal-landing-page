@@ -24,10 +24,10 @@
   </head>
 
   <body>
-    <header>
+    <header class="site-header">
       <a href="#hero" class="logo">Shahd Mattar</a>
 
-      <nav class="navigation">
+      <nav class="navigation" aria-label="Main navigation">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -37,52 +37,57 @@
     </header>
 
     <main>
-      <section class="main" id="hero">
-        <div class="main-content">
-          <h2>
-            Hello I'm Shahd
-            <br />
-            <span>Frontend Developer</span>
-          </h2>
+      <section class="hero" id="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>
+              Hello I'm Shahd
+              <span>Frontend Developer</span>
+            </h1>
 
-          <h3>I build clean and responsive web interfaces.</h3>
+            <p>I build clean and responsive web interfaces.</p>
 
-          <a href="#projects" class="main-btn">View my work</a>
+            <a href="#projects" class="main-btn">View my work</a>
 
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/shahd-matar-957608368"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Shahd Mattar's LinkedIn profile"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a
-              href="https://github.com/shahdmattar"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Shahd Mattar's GitHub profile"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a
-              href="https://www.instagram.com/shahdmatar04"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Visit Shahd Mattar's Instagram profile"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
+            <ul class="social-icons">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/shahd-matar-957608368"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/shahdmattar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/shahdmatar04"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <section class="about" id="about">
         <div class="container">
-          <div class="about-box">
+          <article class="about-content">
             <h2>About Me</h2>
             <p>
               I’m a 4th-year <strong>Computer Engineering</strong> student at
@@ -92,7 +97,7 @@
               experience. I’m always eager to learn new technologies and improve
               my skills in web development.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
@@ -100,36 +105,33 @@
         <div class="container">
           <h2 class="section-title">My Skills</h2>
 
-          <div class="skills-content">
-            <div class="skill-card">
+          <div class="skills-grid">
+            <article class="skill-card">
               <h3>Frontend</h3>
               <ul>
-                <li>HTML semantic structure</li>
-                <li>CSS styling and layouts</li>
+                <li>Semantic HTML</li>
+                <li>CSS layouts and styling</li>
                 <li>Responsive web design</li>
-                <li>JavaScript basics</li>
               </ul>
-            </div>
+            </article>
 
-            <div class="skill-card">
+            <article class="skill-card">
               <h3>Programming</h3>
               <ul>
                 <li>Java OOP fundamentals</li>
                 <li>Python basics</li>
                 <li>Problem solving</li>
-                <li>Data Structures basics</li>
               </ul>
-            </div>
+            </article>
 
-            <div class="skill-card">
+            <article class="skill-card">
               <h3>Tools</h3>
               <ul>
                 <li>Git &amp; GitHub</li>
                 <li>VS Code</li>
                 <li>Chrome DevTools</li>
-                <li>Jira for task and project organization</li>
               </ul>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -138,22 +140,21 @@
         <div class="container">
           <h2 class="section-title">My Projects</h2>
 
-          <div class="projects-content">
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="images/project1.png"
-                  alt="Preview of personal landing page project"
-                  loading="lazy"
-                />
-              </div>
+          <div class="projects-list">
+            <article class="project-card">
+              <img
+                src="images/project1.png"
+                alt="Preview of personal landing page project"
+                loading="lazy"
+              />
 
               <div class="project-info">
                 <h3>Personal Landing Page</h3>
                 <p>
-                  A modern personal landing page built with HTML and CSS,
-                  featuring a hero section, about section, skills cards, project
-                  showcase, and contact area in a clean and responsive layout.
+                  A responsive personal landing page built with HTML and CSS,
+                  featuring a hero section, an about section, skills cards,
+                  project highlights, and a contact area in a clean modern
+                  layout.
                 </p>
 
                 <div class="project-links">
@@ -165,30 +166,41 @@
                   >
                     GitHub Repo
                   </a>
+
+                  <a
+                    href="https://shahdmattar.github.io/personal-landing-page/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-btn outline"
+                  >
+                    Live Demo
+                  </a>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="project-card">
-              <div class="project-image">
-                <img
-                  src="images/project2.png"
-                  alt="Preview of Between Code and Words project"
-                  loading="lazy"
-                />
-              </div>
+            <article class="project-card">
+              <img
+                src="images/project2.png"
+                alt="Preview of Bistrova project"
+                loading="lazy"
+              />
 
               <div class="project-info">
-                <h3>Bistova </h3>
+                <h3>Bistrova</h3>
                 <p>
-                 Bistrova is a responsive Italian restaurant landing page built using HTML and CSS. The project includes a modern hero section, an about section, menu and specials cards, and a contact section. It was designed with a mobile-first approach to ensure a clean and smooth experience across different screen sizes, while also using simple animations and hover effects to enhance the user interface.
+                  A responsive Italian restaurant landing page built with HTML
+                  and CSS, featuring a hero section, menu highlights, specials
+                  cards, and a contact area with a clean and engaging user
+                  interface.
                 </p>
 
                 <div class="project-links">
                   <a href="#" class="project-btn">GitHub Repo</a>
+                  <a href="#" class="project-btn outline">Live Demo</a>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -197,48 +209,46 @@
         <div class="container">
           <h2 class="section-title">Contact Me</h2>
 
-          <div class="contact-box">
-            <form class="contact-form" action="#" method="post">
-              <div class="input-row">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                  minlength="2"
-                  autocomplete="name"
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                  autocomplete="email"
-                />
-              </div>
-
-              <textarea
-                name="message"
-                rows="7"
-                placeholder="Write your message..."
+          <form class="contact-form" action="#" method="post">
+            <div class="input-row">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
                 required
-                minlength="10"
-              ></textarea>
+                minlength="2"
+                autocomplete="name"
+              />
 
-              <button type="submit" class="contact-btn">Send Message</button>
-            </form>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                autocomplete="email"
+              />
+            </div>
 
-            <p class="contact-note">
-              Or contact me directly at
-              <a href="mailto:shahdmatarr@gmail.com">shahdmatarr@gmail.com</a>
-            </p>
-          </div>
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Write your message..."
+              required
+              minlength="10"
+            ></textarea>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+          </form>
+
+          <p class="contact-note">
+            Or contact me directly at
+            <a href="mailto:shahdmatarr@gmail.com">shahdmatarr@gmail.com</a>
+          </p>
         </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p><small>&copy; 2026 Shahd Mattar.</small></p>
       <p>
         <a
